@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --darkBlue: #1E252F;
+    --darkerBlue: hsl(216, 12%, 8%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --orange: hsl(25, 97%, 53%);
+    --buttonColor: #272E38;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color:  var(--darkerBlue);
+    height: 100vh;
+}
+.ratingContainer{
+    background-color: var(--darkBlue);
+    border-radius: 24px;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    padding-top: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+    /*justify-content: space-between;*/
+}
+figure.symbol{
+    background-color: var(--buttonColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure.symbol img{
+    transform: scale(80%);
+}
+.ratingContainer h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+.ratingContainer p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--lightGrey);
+}
+.ratingForm{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    max-height: 100%;
+}
+.radioContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: auto;
+}
+.radioButton{
+    width: 46px;
+    height: 46px;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--lightGrey);
+    background-color: var(--buttonColor);
+}
+.radioButton:hover{
+    background-color: var(--orange);
+    color: white;
+}
+.radioButton--active{
+    background-color: var(--lightGrey);
+    color: white;
+}.radioButton--active:hover{
+    background-color: var(--lightGrey);
+    color: white;
+}
+.ratingSubmit{
+    display: block;
+    height: 40px;
+    border: 0px;
+    border-radius: 22px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ratingSubmit:hover{
+    background-color: white;
+    color: var(--orange);
+}
+.thanksImage{
+    margin: 0 auto;
+    
+}
+.thanksImage img{
+    scale: 80%;
+}
+.ratingContainer--finish{
+    align-items: center;
+}
+.ratingContainer--finish span{
+    color: var(--orange);
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--buttonColor);
+    padding: 8px 16px;
+    padding-bottom: 6px;
+    border-radius: 16px;
+    font-weight: 400;
+    max-width:fit-content;
+}
+.ratingContainer--finish h2{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+.ratingContainer--finish p{
+    text-align: center;
+}
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
